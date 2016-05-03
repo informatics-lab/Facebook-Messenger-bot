@@ -1,0 +1,12 @@
+{
+  "name": "myweather-messenger-bot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node --harmony ./app"
+  },
+  "dependencies": {
+    "datapoint-js": "^0.2.1",
+    "messenger-bot": "^2.1.0"
+  }
+}
