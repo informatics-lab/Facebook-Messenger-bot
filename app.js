@@ -86,12 +86,12 @@ var Bot = require('messenger-bot');
 
 //Library to get the weather depending on the time and the place
 var datapoint = require('datapoint-js')
-    datapoint.set_key("41bf616e-7dbc-4066-826a-7270b8da4b93")
+    datapoint.set_key(process.env.DATAPOINT_KEY)
 
 //Create a new Bot with the token that you can get thanks to the Facebook API
 var bot = new Bot({
-    token: 'EAAYQyEuvYfUBAKL56h5ggNUA65USptjlZCNmZBIhPueQb6QLqHZAEa1YWppDS7JfXe8sShYdK5kg4hf6Rg0Qes0J96dKBV5bZCnwMaWGw5x91MIXlbTmjchPugAanckqrq2oQMHAlOtjyE2sbYZBmDZAVv9AvxODq2IrfRVhSgZCgZDZD',
-    verify: 'VERIFY_TOKEN'
+    token: process.env.FACEBOOK_API_TOKEN,
+    verify: process.env.VERIFY_TOKEN
 });
 
 //Libraries that recognize places
