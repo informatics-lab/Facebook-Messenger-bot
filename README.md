@@ -26,10 +26,6 @@ You can also have a look at the [Facebook tutorial] (https://developers.facebook
 
 Basically, you have to run this kind of command in you terminal to set up the back end side:
 ```Bash
-$ grunt serve
-```
-
-```Bash
 $ ./ngrok http 3000
 ```
 
