@@ -36,9 +36,11 @@ function symbol(expr){
     return symbol;
 }
 
-//Function which take the message of the Facebook's user in argument and find the place the user is interested in.
-//If no place, function give an empty string.
-//If several places, function give the last place.
+/*
+* Function which take the message of the Facebook's user in argument and find the place the user is interested in.
+* If no place, function give an empty string.
+* If several places, function give the last place.
+*/
 function findPlace(words){
     var place = "";
     for(var i=0 ; i<words.length ; i++){
@@ -49,9 +51,11 @@ function findPlace(words){
     return place;
 }
 
-//Function which take the message of the Facebook's user in argument and find the time the user is interested in.
-//If no time, function give an empty string.
-//If several times, function give the last time.
+/*
+* Function which take the message of the Facebook's user in argument and find the time the user is interested in.
+* If no time, function give an empty string.
+* If several times, function give the last time.
+*/
 function findTime(words){
     var time = "";
     for(var i=0 ; i<words.length ; i++){
